@@ -27,7 +27,8 @@ Desenvolver uma aplicação para gestão de livros
 
 ## Diagrama De Classes De Exemplo
 
-![Diagrama de Classes de exemplo](<img width="789" alt="Screen Shot 2022-09-04 at 20 04 31" src="https://user-images.githubusercontent.com/89991160/188337313-810e5854-bb81-468a-8dde-a5bdd1acfcdd.png">)
+![Diagrama de Classes de exemplo](https://user-images.githubusercontent.com/89991160/188337531-ed31d463-578e-4fd3-a64c-57eda5312ffb.png)
+
 
 
 
