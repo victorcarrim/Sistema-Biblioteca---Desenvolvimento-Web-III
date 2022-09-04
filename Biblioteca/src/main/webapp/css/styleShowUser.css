@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.navbar {
+	background: #201b2c;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.dropdown-menu {
+	background:  #514869;
+	border-radius: 20px;
+}
+
+.nav-link {
+	color: white;
+}
+
+.nav-link:hover{
+	color: #00ff88;
+}
+
+.cardPrincipal {
+	margin-top: 60px;
+	border-radius: 20px;
+	background: #201b2c;
+	box-shadow: 0px 10px 40px #00000056;
+}
+
+.cardUser {
+	margin: 2%;
+	background: #2f2841;
+	border-radius: 10px;
+}
+
+body {
+	background:  #2f2841;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13pt;
+}
+
+label {
+	color: #00ff88;
+}
+
+.text-field-id-user > input{
+	width: 10%;
+	border-radius: 10px;
+	padding: 3px;
+	margin: 10px;
+	background: #514869;
+	color: #f0ffffde;
+	font-size: 14pt;
+	text-align: center;
+	box-shadow: 0px 10px 40px #00000056;
+} 
+
+ .text-field-name-user > input, .text-field-email-user > input, .text-field-password-user > input{
+ 	width: 70%;
+	border-radius: 10px;
+	padding: 3px;
+	margin: 10px;
+	background: #514869;
+	color: #f0ffffde;
+	font-size: 14pt;
+	text-align: center;
+ }
+
+.buton-update-delete > input {
+	width: 20%;
+	padding: 6px 0px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 3px;
+	color: #2b134b;
+	background: #00ff88;
+	cursor: pointer;
+	box-shadow: 0px 10px 40px -12px #00ff8052;
+}
