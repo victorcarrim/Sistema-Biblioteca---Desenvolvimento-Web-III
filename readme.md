@@ -44,28 +44,28 @@ Desenvolver uma aplicação para gestão de livros
 
 ### Tela Login
 
-![Login](https://user-images.githubusercontent.com/89991160/188337329-91bc0ee9-5929-4b62-b107-50c28cf809c9.png))
+![Login](https://user-images.githubusercontent.com/89991160/188337329-91bc0ee9-5929-4b62-b107-50c28cf809c9.png)
 
 ### Tela Inicial Com Listagem De Livros
 
-![Tela Inicial](![image](https://user-images.githubusercontent.com/89991160/188337344-3b61e484-18b0-4b57-a84e-bb9bdba122d5.png))
+![Tela Inicial](https://user-images.githubusercontent.com/89991160/188337344-3b61e484-18b0-4b57-a84e-bb9bdba122d5.png)
 
 ### Tela De Cadastro De Autores
 
-![Cadastro Autores](![image](https://user-images.githubusercontent.com/89991160/188337356-a573d0fe-11f2-447a-a798-8b0eb049e69a.png))
+![Cadastro Autores](https://user-images.githubusercontent.com/89991160/188337356-a573d0fe-11f2-447a-a798-8b0eb049e69a.png)
 
 ### Tela De Cadastro De Livros
 
-![Cadastro de Livros](![image](https://user-images.githubusercontent.com/89991160/188337366-df78a17b-40bb-4717-9aaa-f7ba168c3f04.png))
+![Cadastro de Livros](https://user-images.githubusercontent.com/89991160/188337366-df78a17b-40bb-4717-9aaa-f7ba168c3f04.png)
 
 ### Tela De Cadastro De Usuários
 
-![Cadastro de Usuários](![image](https://user-images.githubusercontent.com/89991160/188337375-bf5276d1-5ecb-45a1-9a4c-ed06b485ea53.png))
+![Cadastro de Usuários](https://user-images.githubusercontent.com/89991160/188337375-bf5276d1-5ecb-45a1-9a4c-ed06b485ea53.png)
 
 ### Tela Com Listagem De Autores
 
-![Listagem de Autores](![image](https://user-images.githubusercontent.com/89991160/188337388-ac76772f-9efd-416e-8f31-0070e2e6e9d2.png))
+![Listagem de Autores](https://user-images.githubusercontent.com/89991160/188337388-ac76772f-9efd-416e-8f31-0070e2e6e9d2.png)
 
 ### Tela Com Listagem de Usuários
 
-![Listagem de Usuarios](![image](https://user-images.githubusercontent.com/89991160/188337402-2d388cd0-3028-45b6-a1dd-9a766417d7e2.png))
+![Listagem de Usuarios](https://user-images.githubusercontent.com/89991160/188337402-2d388cd0-3028-45b6-a1dd-9a766417d7e2.png)
