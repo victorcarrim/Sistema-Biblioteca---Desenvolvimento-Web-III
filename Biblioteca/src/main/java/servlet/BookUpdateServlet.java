@@ -29,25 +29,27 @@ public class BookUpdateServlet  extends HttpServlet{
 		String statusField = req.getParameter("field-status");
 		String sendField = req.getParameter("field-send");
 		
-		if(idField.equals("") || name.equals("") || date.equals("") || authorField.equals("") || statusField.equals("")) {
-			resp.sendRedirect("/Biblioteca/showBooks");
-		}
+		
 		
 		try {
+			if(idField.equals("") || name.equals("") || date.equals("") || authorField.equals("") || statusField.equals("")) {
+				resp.sendRedirect("/Biblioteca/showBooks");
+			} else {
+			
 			Integer id = Integer.parseInt(idField);
 			Integer author = Integer.parseInt(authorField);
 			Integer status = Integer.parseInt(statusField);
 			
 			if(sendField.equals("Update")) {
-			Author authorObject = authorFind.findById(author);
-			Book bookObject = new Book(id, name, date, authorObject, status);
-			bookRepository.update(bookObject);
-			resp.sendRedirect("/Biblioteca/showBooks");
+				Author authorObject = authorFind.findById(author);
+				Book bookObject = new Book(id, name, date, authorObject, status);
+				bookRepository.update(bookObject);
+				resp.sendRedirect("/Biblioteca/showBooks");
 			} else {
 				bookRepository.deleteById(id);
 				resp.sendRedirect("/Biblioteca/showBooks");
 			}
-			
+			}
 			
 		} catch (Exception e) {
 			System.out.println("O erro é: " + e);

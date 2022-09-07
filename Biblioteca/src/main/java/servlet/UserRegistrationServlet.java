@@ -23,11 +23,12 @@ public class UserRegistrationServlet extends HttpServlet{
 		String password = req.getParameter("field-password");
 		String type = req.getParameter("field-type");
 		
-		if(name.equals("") || email.equals("") || password.equals("") || type == null) {
-			resp.sendRedirect("/Biblioteca/showUser");
-		}
+		
 		
 		try {
+			if(name.equals("") || email.equals("") || password.equals("") || type == null) {
+				resp.sendRedirect("userRegistration.jsp");
+			} else {
 			
 			if(repository.findByEmail(email, password) != null) {
 				resp.sendRedirect("/Biblioteca/showUser");
@@ -39,6 +40,7 @@ public class UserRegistrationServlet extends HttpServlet{
 				resp.sendRedirect("userRegistration.jsp");
 			} else {
 				resp.sendRedirect("/Biblioteca/showUser");
+			}
 			}
 		} catch (Exception e) {
 			System.out.println(e);

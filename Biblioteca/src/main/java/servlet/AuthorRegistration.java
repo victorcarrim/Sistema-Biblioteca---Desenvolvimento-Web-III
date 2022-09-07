@@ -19,9 +19,21 @@ public class AuthorRegistration extends HttpServlet{
 		protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			String name = req.getParameter("field-name");
 			AuthorRepository repository = new AuthorRepository();
-			Author authorObject = new Author(name);
-			repository.insert(authorObject);
 			
-			resp.sendRedirect("/Biblioteca/showAuthor");
+			try {
+				if(name.equals("")) {
+					resp.sendRedirect("/Biblioteca/authorRegistration.jsp");
+				} else {
+				Author authorObject = new Author(name);
+				repository.insert(authorObject);
+				
+				resp.sendRedirect("/Biblioteca/showAuthor");
+				}
+			} catch (Exception e) {
+				System.out.println("O erro é: " + e);
+				resp.sendRedirect("/Biblioteca/showAuthor");
+			}
+			
+			
 		}
 }

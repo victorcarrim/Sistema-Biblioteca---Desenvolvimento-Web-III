@@ -25,11 +25,13 @@ public class UserUpdateServlet extends HttpServlet{
 		String type = req.getParameter("field-type");
 		String sendField = req.getParameter("field-send");
 		
-		if(idField.equals("") || name.equals("") || email.equals("") || password.equals("") || type.equals("")) {
-			resp.sendRedirect("/Biblioteca/showBooks");
-		}
+		
 		
 		try {
+			if(idField.equals("") || name.equals("") || email.equals("") || password.equals("") || type.equals("")) {
+				resp.sendRedirect("/Biblioteca/showUser");
+			} else {
+			
 			Integer id = Integer.parseInt(idField);
 			
 			if(sendField.equals("Update")) {
@@ -40,7 +42,7 @@ public class UserUpdateServlet extends HttpServlet{
 				userRepository.deleteById(id);
 				resp.sendRedirect("/Biblioteca/showUser");
 			}
-			
+			}
 			
 		} catch (Exception e) {
 			System.out.println("O erro é: " + e);

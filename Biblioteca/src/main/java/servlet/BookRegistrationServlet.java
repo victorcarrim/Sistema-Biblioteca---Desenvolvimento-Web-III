@@ -32,6 +32,7 @@ public class BookRegistrationServlet extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		AuthorRepository authorFind = new AuthorRepository();
 		BookRepository bookRepository = new BookRepository();
+		Book bookObject;
 		
 		String name = req.getParameter("field-name");
 		String date = req.getParameter("field-date");
@@ -40,18 +41,22 @@ public class BookRegistrationServlet extends HttpServlet{
 		
 		System.out.println(name + date + authorField + statusField);
 		
-		if( name.equals("") || date.equals("") || authorField.equals("") || statusField.equals("")) {
-			resp.sendRedirect("/Biblioteca/bookRegistration");
-		}
+		
 		
 		try {
+			if( name.equals("") || date.equals("") || authorField.equals("") || statusField.equals("")) {
+				resp.sendRedirect("/Biblioteca/bookRegistration");
+			} else {
+			
 			Integer author = Integer.parseInt(authorField);
 			Integer status = Integer.parseInt(statusField);
 			
 			Author authorObject = authorFind.findById(author);
-			Book bookObject = new Book(0, name, date, authorObject, status);
+			bookObject = new Book(0, name, date, authorObject, status);
 			bookRepository.insert(bookObject);
 			resp.sendRedirect("/Biblioteca/showBooks");
+			
+			} 
 			
 			
 		} catch (Exception e) {

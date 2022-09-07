@@ -23,11 +23,12 @@ public class AuthorUpdateServlet extends HttpServlet{
 		String name = req.getParameter("field-name");
 		String sendField = req.getParameter("field-send");
 		
-		if(idField.equals("") || name.equals("")) {
-			resp.sendRedirect("/Biblioteca/showAuthor");
-		}
+		
 		
 		try {
+			if(idField.equals("") || name.equals("")) {
+				resp.sendRedirect("/Biblioteca/showAuthor");
+			} else {
 			Integer id = Integer.parseInt(idField);
 			
 			if(sendField.equals("Update")) {
@@ -37,6 +38,7 @@ public class AuthorUpdateServlet extends HttpServlet{
 			} else {
 				authorRepository.deleteById(id);
 				resp.sendRedirect("/Biblioteca/showAuthor");
+			}
 			}
 			
 			
